@@ -8,6 +8,6 @@ public interface MyStream {
   MyStream map(Function<Integer, Integer> mapper);
   MyStream distinct();
   MyStream sorted();
-  List<Integer> collect();
+  List<Integer> toList();
   Integer reduce(Integer init, BiFunction<Integer, Integer, Integer> accumulator);
 }
